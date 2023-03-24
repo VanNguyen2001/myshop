@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/hamster-favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Hamshop - Những Con Báo Cute</title>
+    </head>
+    <body>
+        <!--==================== LOADER ====================-->
+        <div class="load" id="load">
+            <img src="assets/img/load-hamster.gif" alt="" class="load__gif">
+        </div>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/hamster-logo.png" alt="" class="nav__logo-img">
+                    Hamshop.
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                Trang Chủ
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">
+                                Hamster
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#premium" class="nav__link">
+                                Ưu Đãi
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#blog" class="nav__link">
+                                Bài Viết
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                Chung
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <i class='bx bx-shopping-bag'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main>
+            <!--==================== HOME ====================-->
+            <section class="home grid" id="home">
+                <div class="home__container">
+                    <div class="home__content container">
+                        <h1 class="home__title">
+                            Cùng tìm kiếm người bạn dễ thương nào<span>.</span>
+                        </h1>
+                        <p class="home__description">
+                            Đến và hốt một đứa về báo nào.. ý lộn, nuôi chứ.
+                        </p>
+                        <div class="home__data">
+                            <div class="home__data-group">
+                                <h2 class="home__data-number">80K</h2>
+                                <h3 class="home__data-title">Sản Phẩm</h3>
+                                <p class="home__data-description">Chuồng nuôi, wheel chạy, và nhiều hơn thế.</p>
+                            </div>
+
+                            <div class="home__data-group">
+                                <h2 class="home__data-number">7+</h2>
+                                <h3 class="home__data-title">Hamster</h3>
+                                <p class="home__data-description">Không chỉ Hamster mà còn nhiều loài khác nữa.</p>
+                            </div>
+                        </div>
+                        <a href="#specialty">
+                            <img src="assets/img/hamster-scroll.png" alt="" class="home__scroll">
+                        </a>
+                    </div>
+                </div>
+                <img src="assets/img/home.png" alt="" class="home__img">
+            </section>
+
+            <!--==================== ESPECIALTY ====================-->
+            <div class="specialty section container" id="specialty">
+                <div class="specialty__container">
+                    <div class="specialty__box">
+                        <h2 class="section__title">
+                            Danh mục các loại sản phẩm, Hamster có tại cửa hàng!
+                        </h2>
+                        <div>
+                            <a href="#" class="button specialty_button">Xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="specialty__category">
+                        <div class="specialty__group specialty__line">
+                            <img src="assets/img/specialty1.png" alt="" class="specialty__img">
+                            <h3 class="specialty__title">Hamster</h3>
+                            <p class="specialty__description">Có rất rất nhiều giống, chủng loại và màu sắc khác nhau.</p>
+                        </div>
+
+                        <div class="specialty__group specialty__line">
+                            <img src="assets/img/specialty2.png" alt="" class="specialty__img">
+                            <h3 class="specialty__title">Vật Dụng</h3>
+                            <p class="specialty__description">Chuồng nuôi, wheel chạy, nhà tắm, bình nước và nhiều hơn thế nữa</p>
+                        </div>
+
+                        <div class="specialty__group">
+                            <img src="assets/img/specialty3.png" alt="" class="specialty__img">
+                            <h3 class="specialty__title">Thức Ăn</h3>
+                            <p class="specialty__description">Thức ăn trộn, thức ăn dặm, vitamin, và nhiều loại thuốc khác.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section" id="products">
+                <div class="products__container container">
+                    <h2 class="section__title">
+                        Một số dòng Hamster phổ biến nhất.
+                    </h2>
+                    <ul class="products__filters">
+                        <li class="products__item products__line active-product" data-filter=".delicacies">
+                            <h3 class="products__title">Winter White</h3>
+                            <span class="products_stock">3 Loại</span>
+                        </li>
+
+                        <li class="products__item products__line" data-filter=".coffee">
+                            <h3 class="products__title">Robo</h3>
+                            <span class="products_stock">3 Loại</span>
+                        </li>
+
+                        <li class="products__item products__line" data-filter=".cake">
+                            <h3 class="products__title">Bear</h3>
+                            <span class="products_stock">3 Loại</span>
+                        </li>
+                    </ul>
+                    <div class="products__content grid">
+                        <!--==================== Delicacies ====================-->
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee1.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">50.000 vnd</h2>
+                                <h3 class="products__name">Sóc</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee2.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">70.000 vnd</h2>
+                                <h3 class="products__name">Trà Sữa</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card delicacies">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee3.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">40.000 nvd</h2>
+                                <h3 class="products__name">Sapphire</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                        <!--==================== Coffee ====================-->
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee4.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$7</h2>
+                                <h3 class="products__name">Mặt Nâu</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee5.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$12</h2>
+                                <h3 class="products__name">Bò Sữa</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card coffee">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee6.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$9</h2>
+                                <h3 class="products__name">Trà Sữa</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <!--==================== Cake ====================-->
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee7.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$6</h2>
+                                <h3 class="products__name">Gấu Nâu</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee1.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$5</h2>
+                                <h3 class="products__name">Gấu Bắc Cực</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="products__card cake">
+                            <div class="products__shape">
+                                <img src="assets/img/logocoffee3.png" alt="" class="products__img">
+                            </div>
+
+                            <div class="products__data">
+                                <h2 class="product__price">$15</h2>
+                                <h3 class="products__name">Gấu Xám</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALITY ====================-->
+            <section class="quality section" id="premium">
+                <div class="quality__container container">
+                    <h2 class="section__title">
+                        Ưu đãi mới dành cho người may mắn khi mua sắm tại cửa hàng!
+                    </h2>
+                    <div class="quality__content grid">
+                        <div class="quality__images">
+                            <img src="assets/img/quality1.jpg" alt="" class="quality__img-big">
+                            <img src="assets/img/quality2.jpg" alt="" class="quality__img-small">
+                        </div>
+
+                        <div class="quality__data">
+                            <h1 class="quality__title">Lồng kính mica</h1>
+                            <h2 class="quality__price">400.000vnd</h2>
+                            <span class="quality__special">Ưu đãi đặc biệt dành cho bạn Đạt.</span>
+                            <p class="quality__description">
+                                Khi mua lồng kính mica tại của hàng, khách hàng sẽ được ưu đãi nhận thêm một số món quà từ cửa hàng, ngoài ra còn có thể nhận thêm một số vật dụng và một chú robo vô cùng dễ thương.
+                            </p>
+                            <div class="quality__buttons">
+                                <button class="button">
+                                    Mua Ngay
+                                </button>
+
+                                <a href="#" class="quality__button">
+                                    Xem thêm
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== LOGOS ====================-->
+            <section class="logo section">
+                <div class="logo__container container grid">
+                    <img src="assets/img/logocoffee1.png" alt="" class="logo__img">
+                    <img src="assets/img/logocoffee2.png" alt="" class="logo__img">
+                    <img src="assets/img/logocoffee3.png" alt="" class="logo__img">
+                    <img src="assets/img/logocoffee4.png" alt="" class="logo__img">
+                    <img src="assets/img/logocoffee5.png" alt="" class="logo__img">
+                </div>
+            </section>
+
+            <!--==================== BLOG ====================-->
+            <section class="blog section" id="blog">
+                <div class="blog__container container">
+                    <h2 class="section__title">
+                        Một số bài viết đáng chú ý!
+                    </h2>
+                    <div class="blog__content grid">
+                        <article class="blog__card">
+                            <div class="blog__image">
+                                <img src="assets/img/blog1.jpg" alt="" class="blog__img">
+                                <a href="#" class="blog__button">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+
+                            <div class="blog__data">
+                                <h2 class="blog__title">
+                                    Hamster Robo
+                                </h2>
+                                <p class="blog__description">
+                                    Chuột Hamster Roborovski hay chuột Roborovski hay còn gọi là Hamster robo là một loài động vật có vú trong họ Cricetidae, bộ Gặm nhấm.
+                                </p>
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>12</span>
+                                    </div>
+
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>76,5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="blog__card">
+                            <div class="blog__image">
+                                <img src="assets/img/blog2.jpg" alt="" class="blog__img">
+                                <a href="#" class="blog__button">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+
+                            <div class="blog__data">
+                                <h2 class="blog__title">
+                                    Hamster Gấu Báo.. lộn, Béo
+                                </h2>
+                                <p class="blog__description">
+                                    Hamster bear (hamster gấu) là loại hamster hiền lành nhất trong các loại hamster (hamster cambell, hamster winter white, hamster robo). Hamster bear thường hiền lành, với bộ lông bông xù mềm mịn như những chú gấu bông… có lẽ vì thế mà chúng được gọi là hamster bear.
+                                </p>
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>45</span>
+                                    </div>
+
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>356,5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Hamshop.</h1>
+
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <p class="footer__description">Cám ơn bạn đã luôn ủng hộ Hamshop.</p>
+                        <div class="footer__newsletter">
+                            <input type="email" placeholder="Địa chỉ email của bạn!" class="footer__input">
+                            <button class="footer__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Địa Chỉ</h2>
+                        <p class="footer__information">
+                            176 Phan Chu Trinh. <br>
+                            Vĩnh Ninh, Thành Phố Huế, T-T Huế
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Liên Hệ</h2>
+                        <p class="footer__information">
+                            +0399712074 <br>
+                            2001.huynhnguyen@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h2 class="footer__subtitle">Mở Cửa</h2>
+                        <p class="footer__information">
+                            Đầu năm - Cuối năm <br>
+                            12h00 trưa - 3h sáng
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__group">
+                    <ul class="footer__social">
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </ul>
+
+                    <span class="footer__copy">
+                        &#169; Huỳnh Văn Nguyên.
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
